@@ -16,9 +16,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.5
-        uses: actions/setup-python@v1
-      -name: Install Dependencies
+     -name: Install Dependencies
         run: |
           make install
       -name : Lint with pylin
