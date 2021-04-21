@@ -15,16 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Install Dependencies
-        run: |
-          make install
-      -name : Lint with pylin
-        run: |
-          make lint
-      -name: Test with Pytest
-        run: |
-          make test
-      - name: Run hello script
-        run: make hello
+    -name: Install Dependencies
+    run: make install
+    -name: Lint with pylint
+    run: make lint
+    -name: Test with Pytest
+     run: make test
+    - name: Run hello script
+    run: make hello
 
  
